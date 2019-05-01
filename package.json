@@ -1,0 +1,28 @@
+{
+  "name": "spacex_launch_stats",
+  "version": "1.0.0",
+  "description": "App that lists SpaceX launch missions",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Okan DAVUT",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "classnames": "^2.2.6",
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-graphql": "^0.8.0",
+    "graphql": "^14.2.1",
+    "moment": "^2.24.0",
+    "react-moment": "^0.9.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  }
+}
